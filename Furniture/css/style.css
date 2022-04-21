@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url("https://css.gg/css?=|search|shopping-bag");
+/* ЧАСТО ИСПОЛЬЗУЕМЫЕ ПЕРЕМЕННЫЕ */
+/* ЧАСТО ИСПОЛЬЗУЕМЫЕ ПЕРЕМЕННЫЕ */
+.container {
+  max-width: calc(1220px - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Inter;
+  font-size: 1rem;
+  color: #282A30;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  height: 7.5rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.header__logo {
+  all: unset;
+}
+
+.header__inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__uo-list {
+  color: #27292f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8.75rem;
+}
+
+.header .uo-list__item {
+  cursor: pointer;
+}
+
+.header .uo-list__item:hover {
+  color: #F7515C;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.header__icons {
+  gap: 5.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .icon:hover {
+  cursor: pointer;
+  color: #F7515C;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 1100px) {
+  .header__uo-list {
+    gap: 4.375rem;
+  }
+  .header__icons {
+    gap: 2.65625rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__nav {
+    display: none;
+  }
+  .header__icons {
+    margin: 0px 2.65625rem 0px auto;
+  }
+  .burger-menu {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  .burger-menu__line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  .burger-menu__top-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .burger-menu__middle-line {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  .burger-menu__bottom-line {
+    position: absolute;
+    top: 100%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 425px) {
+  .header__logo {
+    width: calc(min(100%, calc(100% / 1.2)));
+  }
+}
+/*# sourceMappingURL=style.css.map */

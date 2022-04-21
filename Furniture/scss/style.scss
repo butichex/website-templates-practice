@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url('https://css.gg/css?=|search|shopping-bag');
+
+
+
+@function rem($size) {
+    @return $size / 16 * 1rem
+}
+
+
+
+/* ЧАСТО ИСПОЛЬЗУЕМЫЕ ПЕРЕМЕННЫЕ */
+
+
+$body-color      : white;
+$accent-color    : #F7515C;
+$sub-accent-color: hsla(356, 91, 64, 95%);
+$text-color      : #282A30;
+$text-sub-color  : hsla(225, 9, 17, 70%);
+
+
+/* ЧАСТО ИСПОЛЬЗУЕМЫЕ ПЕРЕМЕННЫЕ */
+
+
+
+.container {
+    max-width   : calc(1220px - 40px);
+    margin-left : auto;
+    margin-right: auto;
+    padding     : 0px 20px;
+}
+
+
+
+body {
+    box-sizing : border-box;
+    font-family: Inter;
+    font-size  : 1rem;
+    color      : $text-color;
+}
+
+
+
+a {
+    text-decoration: none;
+    color          : white;
+}
+
+
+img {
+    max-width: 100%;
+    height   : auto;
+}
+
+
+
+
+.header {
+    height  : rem(120);
+    width   : 100%;
+    position: fixed;
+    left    : 0;
+    top     : 0;
+
+    &__logo {
+        all: unset;
+    }
+
+    &__inner {
+        height         : 100%;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+    }
+
+
+    &__uo-list {
+        color      : $text-sub-color;
+        display    : flex;
+        align-items: center;
+        gap        : rem(140);
+    }
+
+
+    .uo-list__item {
+        cursor: pointer;
+    }
+
+
+    .uo-list__item:hover {
+        color     : $accent-color;
+        transition: color 0.3s ease-in-out;
+    }
+
+
+
+
+    &__icons {
+        gap        : rem(85);
+        display    : flex;
+        align-items: center;
+    }
+
+    .icon:hover {
+        cursor    : pointer;
+        color     : $accent-color;
+        transition: color 0.3s ease-in-out;
+    }
+
+
+    @media (max-width: 1100px) {
+        &__uo-list {
+            gap: rem(70);
+        }
+
+
+        &__icons {
+            gap: rem(42.5);
+        }
+
+    }
+
+
+}
+
+
+@media (max-width: 900px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+
+
+        &__icons {
+            margin: 0px rem(42.5) 0px auto;
+        }
+    }
+    
+    .burger-menu {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        &__line {
+            width: 100%;
+            height: 2px;
+            background-color: black;
+        }
+
+
+        &__top-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &__middle-line {
+            background-color: black;
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-100%);
+        }
+
+        &__bottom-line {
+            position: absolute;
+            top: 100%;
+            transform: translateY(-100%);
+        }
+    }
+
+
+}
+
+
+@media (max-width: 425px) {
+    .header {
+        &__logo {
+            width: calc(min(100%, calc(100% / 1.2)));
+        }
+    }
+}
