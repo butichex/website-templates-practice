@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+:root {
+    --header-height   : 120px;
+    --body-color      : white;
+    --accent-color    : #F7515C;
+    --sub-accent-color: hsla(356, 91, 64, 95%);
+    --text-color      : #282A30;
+    --text-sub-color  : hsla(225, 9, 17, 70%);
+
+
+/*========== Font and typography ==========*/
+    --body-font: 'Montserrat'; 
+    --normal-font-size: 1rem; 
+
+    // Font weight
+    --font-medium   : 500;
+    --font-semi-bold: 600;
+    --font-black    : 900;
+
+/*========== Font and typography ==========*/
+
+
+/*========== z index ==========*/
+--z-tooltip: 10;
+--z-fixed  : 100;
+
+/*========== z index ==========*/
+
+
+}

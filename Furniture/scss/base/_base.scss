@@ -1,0 +1,39 @@
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin     : var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height   : auto;
+}
+
+button,
+input {
+    border : none;
+    outline: none;
+}
+
+button {
+    cursor     : pointer;
+    font-family: var(--body-font);
+    font-size  : var(--normal-font-size);
+}

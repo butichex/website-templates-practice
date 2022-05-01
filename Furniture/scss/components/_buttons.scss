@@ -1,0 +1,45 @@
+.button {
+    cursor     : pointer;
+    color      : white;
+    display    : inline-block;
+    font-style : normal;
+    font-weight: 600;
+    line-height: 27px;
+    padding    : 1em 2em;
+}
+
+
+.button-red {
+    background-color: var(--accent-color);
+}
+
+
+.wv-button {
+    display    : flex;
+    gap        : rem(20);
+    align-items: center;
+    cursor     : pointer;
+
+
+
+    &__icon {
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        transform       : rotate(90deg);
+        background-color: white;
+        box-shadow      : 0px 4px 70px rgba(0, 0, 0, 0.15);
+        width           : rem(58);
+        height          : rem(58);
+        border-radius   : 100%;
+    }
+
+    &__title {
+        font-style : normal;
+        font-weight: 600;
+        font-size  : 22px;
+        line-height: 27px;
+        color      : hsla(225, 9%, 17%, 1);
+
+    }
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Furniutur.</title>
 </head>
 
@@ -17,7 +17,7 @@
                 <img src="./img/logo.svg" alt="" class="header__logo">
             </a>
             <nav class="header__nav">
-                <ul class="header__uo-list">
+                <ul id="menu" class="header__uo-list">
                     <li class="uo-list__item">Home</li>
                     <li class="uo-list__item">About</li>
                     <li class="uo-list__item">Collection</li>
@@ -28,13 +28,63 @@
                 <div class="header__checkout-icon gg-shopping-bag icon"></div>
                 <div class="header__search-icon gg-search icon "></div>
             </div>
-            <div class="header__burger-menu burger-menu">
+            <div id="burger-menu" class="header__burger-menu burger-menu">
                 <div class="burger-menu__top-line burger-menu__line"></div>
                 <div class="burger-menu__middle-line burger-menu__line"></div>
                 <div class="burger-menu__bottom-line burger-menu__line"></div>
             </div>
+            <div id="popup" class="header__popup"></div>
         </div>
     </header>
+    <main class="main">
+        <section class="hero-section">
+            <div class="hero-section__inner container">
+                <p class="hero-section__title title">Feel your home
+                    with a modern design
+                    space</p>
+                <p class="hero-section__desc desc"></p>
+                <img src="./img/hero-bg.png" alt="" class="hero-section__bg">
+                <div class="hero-section__item-pattern">
+                    <img src="./img/hero-item.png" alt="" class="hero-section__item">
+                    <img src="./img/hero-pattern.png" alt="" class="hero-section__pattern">
+                </div>
+                <div class="hero-section__bottom">
+                    <div class="hero-section__button button button-red">Discover</div>
+                    <div class="hero-section__wv-button wv-button">
+                        <div class="wv-button__icon">
+                            <div class="gg-shape-triangle icon"></div>
+                        </div>
+                        <p class="wv-button__title">Watch video</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ptd-section">
+            <div class="ptd-section__inner container">
+                <div class="ptd-section__left">
+                    <img src="./img/ptd-item.png" alt="" class="ptd-section__image">
+                    <div class="left__rect-1"></div>
+                    <div class="left__rect-2"></div>
+                    <img src="./img/hero-pattern.png" alt="" class="ptd-section__pattern">
+                </div>
+                <div class="ptd-section__right">
+                    <p class="ptd-section__title title">About<br><span class="outline-text">Furniture</span></p>
+                    <p class="ptd-section__desc desc">People have been using natural objects, such as tree
+                        stumps, rocks and moss, as furniture since the
+                        beginning of human civilisation. </p>
+                    <div class="ptd-section__button button button-red">Read more</div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="review-p-section">
+            <div class="review-p-section__inner container">
+                <p class="review-p-section__title title">More value from this<br><span class="outline-text">Furniture</span> </p>
+            </div>
+        </section>
+    </main>
+    <script src="./js/header.js" class=""></script>
 </body>
 
 </html>

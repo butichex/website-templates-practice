@@ -1,0 +1,60 @@
+.ptd-section {
+    margin: rem(250) 0px 0px 0px;
+
+    &__inner {
+        display: flex;
+    }
+
+
+    &__image {
+        width : rem(480);
+        height: rem(720);
+    }
+
+
+    &__desc {
+        max-width: rem(520);
+        margin   : rem(55) 0px 3rem 0px;
+    }
+
+
+    &__right {
+        margin: 0px 0px 0px rem(128);
+    }
+
+    &__pattern {
+        position: absolute;
+        bottom: rem(-60);
+        right: rem(-100);
+    }
+
+
+    &__left {
+        position: relative;
+
+        .left__rect-1 {
+            top             : rem(500);
+            left            : rem(-50);
+            z-index         : -1;
+            position        : absolute;
+            width           : rem(250);
+            height          : rem(180);
+            background-color: #282A30;
+        }
+
+        .left__rect-2 {
+            top             : rem(360);
+            right           : rem(50);
+            z-index         : -1;
+            position        : absolute;
+            width           : rem(300);
+            height          : rem(305);
+            background-color: #282A30;
+
+        }
+    }
+
+
+
+}
+
