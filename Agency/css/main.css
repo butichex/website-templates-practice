@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+:root {
+  --header-height: 100;
+  --container-width: 1140;
+  --container-pd: 15;
+  --body-color: #FDF0E9;
+  --accent-color: #EF6C57;
+  --text-color: white;
+  --text-sub-color: #B2B2BA;
+  --text-accent-color: #EF6C57;
+  /*========== Font and typography ==========*/
+  --body-font: 'Montserrat';
+  --normal-font-size: 1rem;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-black: 900;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.button {
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  font-size: 1rem;
+  padding: 1em 2em;
+  border-radius: calc(6 / 16 * 1rem);
+}
+
+.button-outline {
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button-inline-red {
+  font-weight: 900;
+  background-color: var(--accent-color);
+}
+
+.header {
+  z-index: 1;
+  width: 100%;
+  background: #28293E;
+  height: calc(var(--header-height) / 16 * 1rem);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.header__inner {
+  color: white;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: calc(100 / 16 * 1rem);
+}
+
+.main {
+  padding: calc(var(--header-height) / 16 * 1rem) 0px 0px 0px;
+}
+
+.hero {
+  position: absolute;
+  width: 100vw;
+  background-color: #28293E;
+}
+
+.hero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__title {
+  padding: 8.75rem 0px 0px 0px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  /* or 111% */
+  letter-spacing: -0.125rem;
+  /* Text_Light */
+  color: #FFFFFF;
+  max-width: 34.375rem;
+}
+
+.hero__desc {
+  margin: 1.5rem 0px 2.125rem 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  /* or 200% */
+  /* Text_Light_Gray */
+  color: rgba(255, 255, 255, 0.64);
+  max-width: 31.25rem;
+}
+
+.hero__actions {
+  padding: 0px 0px 6.75rem 0px;
+}
+
+.hero__actions .actions__about-button {
+  font-size: 0.875rem;
+}
+
+.hero__actions .actions__contact-button {
+  font-size: 0.875rem;
+}
+
+.hero__review {
+  padding: 0px 0px 3.5rem 0px;
+}
+
+.hero__images {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  width: 29.375rem;
+  height: 31.25rem;
+}
+
+.hero__images .hero-notebook {
+  width: calc(100% / 2.5);
+  position: absolute;
+  left: 0;
+  top: 4.375rem;
+}
+
+.hero__images .hero-human {
+  width: calc(100% / 2.5);
+  position: absolute;
+  right: 0;
+  top: 11.875rem;
+}
+
+.hero__images .hero-card {
+  width: calc(100% / 2.5);
+  position: absolute;
+  left: 4.375rem;
+  bottom: 1.875rem;
+}
+
+.hero__images .hero-round {
+  width: calc(100% / 6);
+  position: absolute;
+  top: 3.75rem;
+  right: 10rem;
+}
+
+.hero__images .hero__round {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 18.75rem;
+  height: 18.75rem;
+  border-radius: 100vw;
+  background-color: #32334C;
+}
+
+.review-simple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.375rem;
+}
+
+.review-simple__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 200% */
+  /* Text_Light_Gray */
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.review-simple__author {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 200% */
+  /* Text_Light */
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: calc(var(--container-width) / 16 * 1rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px calc(var(--container-pd) / 16 * 1rem);
+}
+/*# sourceMappingURL=main.css.map */

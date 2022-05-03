@@ -1,0 +1,24 @@
+.header {
+    z-index: 1;
+    width: 100%;
+    background: #28293E;
+    height: calc(var(--header-height) / 16 * 1rem);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    &__inner {
+        color: white;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: calc(100 / 16 * 1rem);
+    }
+}
