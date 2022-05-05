@@ -1,0 +1,159 @@
+@media (max-width: 1300px) {
+
+    .container {
+        max-width: rem(1100);
+    }
+
+    .header {
+        &__list {
+            display: none;
+        }
+
+        &__action {
+            display: none;
+        }
+
+
+        &__popup-button {
+            top       : 50%;
+            transform : translateY(-50%);
+            right     : rem(30);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    .hero {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__title {}
+
+
+        &__desc {}
+
+
+        &__actions {
+            .actions {
+                &__contact-button {
+                    font-size: 0.8rem;
+                }
+
+
+                &__about-button {
+                    font-size: 0.8rem;
+
+                }
+            }
+        }
+
+
+        &__left {
+            order: 2;
+        }
+
+
+
+        &__right {
+            display    : flex;
+            align-items: center;
+            order      : 1;
+        }
+
+
+        &__images {
+            font-size: 0.8rem;
+        }
+    }
+
+
+    .logos {
+        &__inner {
+            flex-wrap: wrap;
+
+            .logos {
+                &__logo {
+                    flex: 0 1 auto;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .logos {
+        height: 13rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logos {
+        height: 15rem;
+    }
+    .hero {
+        &__title {
+            font-size  : 3rem;
+            line-height: 1.5;
+            padding    : rem(40) 0px 0px 0px;
+        }
+    }
+}
+
+
+
+@media (max-width: 370px) {
+    .hero {
+        &__title {
+            font-size  : 2rem;
+            line-height: 1.5;
+            padding    : 0px 0px 0px 0px;
+        }
+
+
+        &__desc {
+            font-size  : 0.8rem;
+            line-height: 1.5;
+
+        }
+
+
+        .hero__actions {
+            padding: 0px 0px 3.5rem 0px;
+        }
+
+        .actions {
+
+            &__about-button {
+                font-size: 0.5rem;
+            }
+
+
+            &__contact-button {
+                font-size: 0.5rem;
+            }
+        }
+
+        .hero__review {
+            gap: 0.75rem;
+        }
+
+        .review {
+            &__text {
+                font-size  : 0.75rem;
+                line-height: 1.5;
+            }
+
+            &__author {
+                font-size  : 0.75rem;
+                line-height: 1.5;
+            }
+
+
+            &__avatar {
+                width: rem(30);
+            }
+        }
+    }
+}

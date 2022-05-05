@@ -1,6 +1,4 @@
 .hero {
-    position        : absolute;
-    width           : 100vw;
     background-color: #28293E;
 
     &__inner {
@@ -8,8 +6,26 @@
         justify-content: space-between;
     }
 
+    &__pattern {
+        position: relative;
+        width: 100%;
+
+
+        .pattern__inner {
+            position: absolute;
+            top     : 15%;
+            left    : 600px;
+            z-index : 1;
+            width   : rem(120);
+
+        }
+    }
+
+
+
     &__title {
-        padding    : rem(140) 0px 0px 0px;
+        z-index    : 100;
+        padding    : rem(80) 0px 0px 0px;
         font-style : normal;
         font-weight: 800;
         font-size  : rem(72);
@@ -25,6 +41,26 @@
         max-width: rem(550);
     }
 
+
+    &__title:before {
+        content: 'MODERN STUDIO';
+        display: block;
+        margin : 0px 0px rem(24) 0px;
+
+        font-style : normal;
+        font-weight: 400;
+        font-size  : 1rem;
+        line-height: 2rem;
+        /* identical to box height, or 200% */
+
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        /* Text_Light_Accent */
+
+        color: #EF6D58;
+
+    }
 
     &__desc {
         margin     : rem(24) 0px rem(34) 0px;
@@ -54,26 +90,42 @@
             font-size: rem(14);
         }
 
-        padding: 0px 0px rem(108) 0px;
+        padding: 0px 0px rem(80) 0px;
     }
 
 
 
     &__review {
-        padding: 0px 0px rem(56) 0px;
+        padding: 0px 0px rem(80) 0px;
     }
 
 
+
+    &__right {
+        display    : flex;
+        align-items: center;
+        font-size  : 0.9rem;
+    }
+
+
+    &__image {
+        width : 31.25em;
+        height: 33.125em;
+
+    }
+
+    /* 
     &__images {
         position: relative;
         z-index : 1;
         top     : 0;
-        width   : rem(470);
+        width   : rem(500);
         height  : rem(500);
+        font-size: 0.85rem;
 
 
         .hero-notebook {
-            width: calc(100% / 2.5);
+            width: calc(276 / 16 * 1em);
 
             position: absolute;
             left    : 0;
@@ -82,7 +134,7 @@
 
 
         .hero-human {
-            width   : calc(100% / 2.5);
+            width: calc(246 / 16 * 1em);
             position: absolute;
             right   : 0;
             top     : rem(190);
@@ -90,7 +142,7 @@
 
 
         .hero-card {
-            width: calc(100% / 2.5);
+            width: calc(214 / 16 * 1em);
 
             position: absolute;
             left    : rem(70);
@@ -99,8 +151,7 @@
 
 
         .hero-round {
-            width: calc(100% / 6);
-
+            width: calc(112 / 16 * 1em);
 
             position: absolute;
             top     : rem(60);
@@ -115,10 +166,10 @@
             top             : 50%;
             left            : 50%;
             transform       : translate(-50%, -50%);
-            width           : rem(300);
-            height          : rem(300);
+            width           : calc(246 / rem(300) * 1em);
+            height           : calc(246 / rem(300) * 1em);
             border-radius   : 100vw;
             background-color: #32334C;
         }
-    }
+    } */
 }
