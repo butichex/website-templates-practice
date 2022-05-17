@@ -1,7 +1,7 @@
 @media (max-width: 1300px) {
 
     .container {
-        max-width: rem(1100);
+        max-width: 90vw;
     }
 
     .header {
@@ -23,11 +23,12 @@
     }
 
     .hero {
-        &__inner {
-            flex-direction: column;
-        }
+        &__inner {}
 
-        &__title {}
+        &__title {
+            font-size  : 3rem;
+            line-height: 1;
+        }
 
 
         &__desc {}
@@ -36,34 +37,34 @@
         &__actions {
             .actions {
                 &__contact-button {
-                    font-size: 0.8rem;
+                    font-size: 0.75rem;
                 }
 
 
                 &__about-button {
-                    font-size: 0.8rem;
+                    font-size: 0.75rem;
 
                 }
             }
         }
 
 
-        &__left {
-            order: 2;
-        }
+        &__left {}
 
+
+        &__image {
+
+        }
 
 
         &__right {
-            display    : flex;
-            align-items: center;
-            order      : 1;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
         }
 
 
-        &__images {
-            font-size: 0.8rem;
-        }
+
     }
 
 
@@ -81,78 +82,146 @@
 }
 
 
-@media (max-width: 1000px) {
-    .logos {
-        height: 13rem;
-    }
-}
 
-
-@media (max-width: 480px) {
-    .logos {
-        height: 15rem;
-    }
+@media (max-width: 900px) {
     .hero {
         &__title {
-            font-size  : 3rem;
-            line-height: 1.5;
-            padding    : rem(40) 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+        &__inner {
+            flex-direction: column;
+        }
+
+
+        &__left {
+            order: 2;
+        }
+
+        &__right {
+            order: 1;
+
+        }
+
+        &__image {
+            width: 70%;
+        }
+
+    }
+
+
+    .about {
+        padding: rem(50) 0px rem(80) 0px;
+
+        &__inner {
+            grid-gap: 7.5%;
+        }
+        &__left {
+            .left {
+                &__image {
+                }
+            }
+        }
+
+
+        &__right {
+            .right {
+                &__title {
+                    margin: 0px;
+                }
+            }
+
         }
     }
-}
 
 
 
-@media (max-width: 370px) {
-    .hero {
-        &__title {
-            font-size  : 2rem;
-            line-height: 1.5;
-            padding    : 0px 0px 0px 0px;
+    @media (max-width: 480px) {
+        :root {
+            --header-height: 80; 
         }
 
-
-        &__desc {
-            font-size  : 0.8rem;
-            line-height: 1.5;
-
+        .container {
+            max-width: 95vw;
         }
 
-
-        .hero__actions {
-            padding: 0px 0px 3.5rem 0px;
+        .logos {
+            height: 15rem;
         }
 
-        .actions {
-
-            &__about-button {
-                font-size: 0.5rem;
-            }
-
-
-            &__contact-button {
-                font-size: 0.5rem;
-            }
-        }
-
-        .hero__review {
-            gap: 0.75rem;
-        }
-
-        .review {
-            &__text {
-                font-size  : 0.75rem;
+        .hero {
+            &__title {
+                font-size  : 2.2rem;
                 line-height: 1.5;
+                padding    : rem(0) 0px 0px 0px;
             }
 
-            &__author {
-                font-size  : 0.75rem;
+            &__actions {
+                padding: 0px 0px rem(50) 0px;
+            }
+
+            &__image {
+            }
+
+
+            &__review {
+                padding: 0px 0px rem(30) 0px;
+            }
+        }
+    }
+
+
+
+    @media (max-width: 370px) {
+        .hero {
+            &__title {
+                font-size  : 1.9rem;
                 line-height: 1.5;
+                padding    : 0px 0px 0px 0px;
             }
 
 
-            &__avatar {
-                width: rem(30);
+            &__desc {
+                font-size  : 0.8rem;
+                line-height: 1.5;
+
+            }
+
+
+            .hero__actions {
+                padding: 0px 0px 3.5rem 0px;
+            }
+
+            .actions {
+
+                &__about-button {
+                    font-size: 0.5rem;
+                }
+
+
+                &__contact-button {
+                    font-size: 0.5rem;
+                }
+            }
+
+            .hero__review {
+                gap: 0.75rem;
+            }
+
+            .review {
+                &__text {
+                    font-size  : 0.75rem;
+                    line-height: 1.5;
+                }
+
+                &__author {
+                    font-size  : 0.75rem;
+                    line-height: 1.5;
+                }
+
+
+                &__avatar {
+                    width: rem(30);
+                }
             }
         }
     }

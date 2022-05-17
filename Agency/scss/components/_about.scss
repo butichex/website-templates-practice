@@ -1,0 +1,37 @@
+.about {
+    background-color: #FDF0E9;
+    padding         : rem(100) 0px rem(50) 0px;
+
+    &__inner {
+        display              : grid;
+        grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+        grid-gap: 10%;     
+    }
+
+    &__right {
+        .right {
+            &__title {
+                margin: rem(90) 0px rem(26) 0px;
+                font-size: calc(clamp(2.5rem, 4vw , 3.5rem));
+            }
+
+            &__subtitle {
+                margin: 0px 0px rem(18) 0px;
+            }
+
+
+            &__desc {
+                margin: 0px 0px rem(34) 0px;
+                max-width: 50ch;
+            }
+        }
+    }
+
+
+    &__left {
+        .left {
+            &__image {
+            }
+        }
+    }
+}

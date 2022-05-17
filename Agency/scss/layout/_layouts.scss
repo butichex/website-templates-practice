@@ -2,5 +2,8 @@
     max-width: calc(var(--container-width) / 16 * 1rem); 
     margin-left: auto;
     margin-right: auto;
-    padding: 0px calc(var(--container-pd) / 16 * 1rem); 
+    padding-left: calc(var(--container-pd) / 16 * 1rem);
+    padding-right: calc(var(--container-pd) / 16 * 1rem);
 }
+
+

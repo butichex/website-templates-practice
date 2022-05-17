@@ -28,7 +28,7 @@
         padding    : rem(80) 0px 0px 0px;
         font-style : normal;
         font-weight: 800;
-        font-size  : rem(72);
+        font-size  : calc(clamp(3.5rem, 4.5vw, 4.5rem));
         line-height: rem(80);
         /* or 111% */
 
@@ -109,8 +109,6 @@
 
 
     &__image {
-        width : 31.25em;
-        height: 33.125em;
 
     }
 
